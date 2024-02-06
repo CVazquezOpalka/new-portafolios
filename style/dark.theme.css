@@ -1,0 +1,9 @@
+.bg-dark-theme {
+  background: #000;
+}
+
+.bg-dark-theme > * {
+  color: #fff;
+  font-size: inherit;
+  font-weight: inherit;
+}

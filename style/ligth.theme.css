@@ -1,0 +1,9 @@
+.bg-ligth-theme{
+    background: #fff !important;
+}
+
+* > .bg-ligth-theme{
+  color: #111 !important;
+  font-size: inherit;
+  font-weight: inherit;
+}
