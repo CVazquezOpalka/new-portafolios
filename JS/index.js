@@ -30,11 +30,16 @@ $(document).ready(function () {
   $("#contact-form").submit(function (event) {
     // Evita que el formulario se envíe de manera predeterminada
     event.preventDefault();
+
+    // Muestra la pantalla de carga
+    $("#loading-overlay").show();
+    $("#submit").hide();
     // Obtiene los valores de los campos del formulario
     var nombre = $("#nombre").val();
     var telefono = $("#telefono").val();
     var email = $("#email").val();
     var mensaje = $("#mensaje").val();
+
     // Envia el formulario a través de EmailJS
     emailjs
       .send("service_s36ze4n", "template_13fle9o", {
@@ -45,26 +50,34 @@ $(document).ready(function () {
       })
       .then(
         function (response) {
+          // Oculta la pantalla de carga
+          $("#loading-overlay").hide();
+          $("#submit").show();
+          // Muestra el mensaje de éxito
           alertify.set("notifier", "position", "top-right");
           alertify.success(
             "Mensaje enviado correctamente",
             "position",
             "top-right"
           );
-          nombre = $("#nombre").val("");
-          telefono = $("#telefono").val("");
-          email = $("#email").val("");
-          mensaje = $("#mensaje").val("");
-          // Puedes agregar lógica adicional aquí, como mostrar un mensaje de éxito al usuario
+
+          // Limpia los campos del formulario
+          $("#nombre").val("");
+          $("#telefono").val("");
+          $("#email").val("");
+          $("#mensaje").val("");
         },
         function (error) {
+          // Oculta la pantalla de carga en caso de error
+          $("#loading-overlay").hide();
+
+          // Muestra el mensaje de error
           alertify.set("notifier", "position", "top-right");
           alertify.error(
             "El mensaje no pudo ser enviado",
             "position",
             "top-right"
           );
-          // Pue
         }
       );
   });

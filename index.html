@@ -365,6 +365,7 @@
             </div>
           </div>
         </div>
+      </div>
     </section>
     <!-- Contacto -->
     <section id="contacto" class="contacto">
@@ -374,31 +375,34 @@
         <div class="fila">
           
           <form id="contact-form">
-  <div class="form-control">
-    <label for="nombre">Nombre y Apellido:</label>
-    <input type="text" id="nombre" placeholder="Ingresa tu nombre completo...">
-  </div>
+            <div class="form-control">
+              <label for="nombre">Nombre y Apellido:</label>
+              <input type="text" id="nombre" placeholder="Ingresa tu nombre completo...">
+            </div>
 
-  <div class="form-control">
-    <label for="telefono">Telefono:</label>
-    <input type="text" id="telefono" placeholder="Ingresa tu telefono..">
-  </div>
+            <div class="form-control">
+              <label for="telefono">Telefono:</label>
+              <input type="text" id="telefono" placeholder="Ingresa tu telefono..">
+            </div>
 
-  <div class="form-control">
-    <label for="email">Email:</label>
-    <input type="email" id="email" placeholder="Ingresa tu email...">
-  </div>
+            <div class="form-control">
+              <label for="email">Email:</label>
+              <input type="email" id="email" placeholder="Ingresa tu email...">
+            </div>
 
-  <div class="form-control">
-    <label for="mensaje">Mensaje</label>
-    <textarea id="mensaje" cols="30" rows="10" placeholder="Ingrese el motivo de su consulta..."></textarea>
-  </div>
+            <div class="form-control">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" cols="30" rows="10" placeholder="Ingrese el motivo de su consulta..."></textarea>
+            </div>
 
-  <button type="submit">
-    Enviar Mensaje <i class="fa-regular fa-paper-plane"></i>
-    <div class="overlay"></div>
-  </button>
-</form>
+            <button type="submit" id="submit">
+              Enviar Mensaje <i class="fa-regular fa-paper-plane"></i>
+              <div class="overlay"></div>
+            </button>
+            <div id="loading-overlay" style="display: none; width: 100%; font-weight: bold; text-align:center;">
+                <div id="loading-message">Enviando mensaje...</div>
+            </div>
+          </form>
 
         </div>
       </div>
