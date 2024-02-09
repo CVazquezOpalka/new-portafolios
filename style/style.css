@@ -696,7 +696,7 @@ footer .arriba i {
   .skills .fila .col {
     width: 100%;
   }
-  .skills .fila .col .warp-container {
+  .skills .contenido-seccion .fila .col .warp-container {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
