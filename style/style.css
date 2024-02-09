@@ -272,7 +272,6 @@ body {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  overflow: hidden;
   gap: 15px;
 }
 .skills .contenido-seccion .fila .col .warp-container .box-skill {
