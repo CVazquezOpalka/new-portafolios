@@ -702,9 +702,12 @@ footer .arriba i {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    
     align-items: center;
     justify-items: center;
+  }
+  .skills .contenido-seccion .fila .col .warp-container .box-skill {
+    width: 120px;
+    height: 90px;
   }
 
   .curriculum .fila {
