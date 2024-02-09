@@ -704,6 +704,10 @@ footer .arriba i {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     overflow: hidden;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-items: center;
   }
 
   .curriculum .fila {
