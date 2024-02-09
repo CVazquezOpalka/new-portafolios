@@ -12,6 +12,8 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
+
+  overflow-x: hidden;
 }
 /* Menu */
 
@@ -248,7 +250,7 @@ body {
 }
 .skills .contenido-seccion {
   max-width: 1100px;
-  margin: auto;
+  margin: 0 auto;
 }
 .skills h2 {
   font-size: 48px;
@@ -270,7 +272,6 @@ body {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding: 10px;
   gap: 15px;
 }
 .skills .contenido-seccion .fila .col .warp-container .box-skill {
@@ -288,9 +289,7 @@ body {
   margin-bottom: 10px;
 }
 .skills .contenido-seccion .fila .col .warp-container .box-skill span {
-  
   text-align: center;
-
 }
 
 /* Curriculum */
@@ -690,6 +689,9 @@ footer .arriba i {
     justify-content: center;
     gap: 10px;
   }
+  .skill {
+    width: 100%;
+  }
   .skills .fila {
     display: block;
   }
@@ -700,9 +702,7 @@ footer .arriba i {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-  }
-  .skills .fila .col .barra-skill {
-    width: 100%;
+    margin: 0;
   }
 
   .curriculum .fila {
