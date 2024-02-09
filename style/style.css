@@ -698,6 +698,11 @@ footer .arriba i {
   .skills .fila .col {
     width: 100%;
   }
+  .skills .fila .col h3 {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+  }
   .skills .contenido-seccion .fila .col .warp-container {
     width: 100%;
     display: grid;
@@ -706,8 +711,8 @@ footer .arriba i {
     justify-items: center;
   }
   .skills .contenido-seccion .fila .col .warp-container .box-skill {
-    width: 120px;
-    height: 90px;
+    width: 130px;
+    height: 120px;
   }
 
   .curriculum .fila {
