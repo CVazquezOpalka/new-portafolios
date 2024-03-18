@@ -7,7 +7,7 @@ $(document).ready(function () {
     toggleMenu();
   });
 
-  $("#nav a").click(function () {
+  $(".nav-responsive a").click(function () {
     toggleMenu();
   });
 
@@ -55,11 +55,7 @@ $(document).ready(function () {
           $("#submit").show();
           // Muestra el mensaje de éxito
           alertify.set("notifier", "position", "top-right");
-          alertify.success(
-            "Mensaje enviado correctamente",
-            "position",
-            "top-right"
-          );
+          alertify.success("Mensaje enviado correctamente", "position", "top-right");
 
           // Limpia los campos del formulario
           $("#nombre").val("");
@@ -73,11 +69,7 @@ $(document).ready(function () {
 
           // Muestra el mensaje de error
           alertify.set("notifier", "position", "top-right");
-          alertify.error(
-            "El mensaje no pudo ser enviado",
-            "position",
-            "top-right"
-          );
+          alertify.error("El mensaje no pudo ser enviado", "position", "top-right");
         }
       );
   });

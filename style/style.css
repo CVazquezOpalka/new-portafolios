@@ -12,9 +12,9 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-
   overflow-x: hidden;
 }
+
 /* Menu */
 
 .contenedor-header {
@@ -44,15 +44,18 @@ body {
 .contenedor-header nav ul {
   display: flex;
   list-style: none;
+  z-index: 10000;
 }
 
 .contenedor-header nav ul li a {
-  text-align: none;
+  display: block;
+  text-align: center;
   color: #fff;
   margin: 0 15px;
   text-decoration: none;
   transition: 0.3s;
   text-transform: uppercase;
+  z-index: 100;
 }
 .contenedor-header nav ul li a:hover {
   color: #1cb698;
@@ -69,12 +72,7 @@ body {
 /* inicio */
 
 .inicio {
-  background: linear-gradient(
-      to top,
-      rgba(30, 35, 38, 0.8),
-      rgba(30, 35, 38, 1)
-    ),
-    url(../img/fondo1.jpg);
+  background: linear-gradient(to top, rgba(30, 35, 38, 0.8), rgba(30, 35, 38, 1)), url(../img/fondo1.jpg);
   background-size: cover;
   height: 100vh;
   color: #fff;
